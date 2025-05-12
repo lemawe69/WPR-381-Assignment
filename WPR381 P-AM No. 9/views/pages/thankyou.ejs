@@ -1,2 +1,11 @@
-<h1>Thank You!</h1>
-<p>Your message has been received.</p>
+<%- include('../partials/header') %>
+
+    <center>
+        <div id = "thankyou_container">
+            <h2>Thank you<% if (name) { %>, <%= name %><% } %>!</h2>
+            <p>Your message has been received. We'll get back to you soon.</p>
+            <a href="/" class="thankyou_home-button ">Back to Home</a>
+        </div>
+    </center>
+
+<%- include('../partials/footer') %>
