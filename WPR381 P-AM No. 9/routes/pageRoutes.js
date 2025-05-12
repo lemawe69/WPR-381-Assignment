@@ -13,9 +13,10 @@ const router = express.Router();
 
 let messages = [];
 
-router.get('/', (req, res) => { 
-    res.render("pages/home")
+router.get('/', (req, res) => {
+    res.render("pages/home", {titel: "GameDEV Home Page"})
 });
+
 
 router.get('/about', (req, res) => {
     res.render('pages/about')
