@@ -15,9 +15,9 @@ We're building a 5-page website for a gaming community with dynamic content rend
 Node.js, Express, EJS and bootstrap.
 
 # Team roles
-Brandon Alfonso Lemmer (578062) - Team Lead
-Darius Mushi (577982) - Frontend Developer
-Jan-Paul Seaman (578081) - Backend Developer
-Otsile Sebola (578109) - Data Manager
+Brandon Alfonso Lemmer (578062) - Team Lead.
+Darius Mushi (577982) - Frontend Developer.
+Jan-Paul Seaman (578081) - Backend Developer.
+Otsile Sebola (578109) - Data Manager.
 
 # Screenshots
