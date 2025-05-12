@@ -22,11 +22,16 @@
 </nav>
 <script>
   function openNav() {
-    document.getElementById("Sidenav").style.width = "250px";
+    document.getElementById("Sidenav").style.width = "15%";
+    document.querySelector(".menu-icon").style.display = "none";
   }
   
 function closeNav() {
-  document.getElementById("Sidenav").style.width = "0";
+  document.getElementById("Sidenav").style.width = "0%";
+  const menuIcon = document.querySelector(".menu-icon");
+  menuIcon.style.display = "flex";
+  menuIcon.style.width = "6%";
 }
 </script>
-</body>
+
+

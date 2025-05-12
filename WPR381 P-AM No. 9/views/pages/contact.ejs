@@ -1,11 +1,10 @@
 <%- include('../partials/header') %>
-<img src="/WPR381 P-AM No. 9/public/images/GameDev-ContactUs2.jpg" alt="Contact us image">
-<br>
-<p>Please fill out the form below so we can get back to you at the speed of light</p>
-<hr>
+<!-- <img src="/WPR381 P-AM No. 9/public/images/GameDev-ContactUs2.jpg" alt="Contact us image">
+<br> -->
+<div id="container">
 <form method="POST" action="/contact">
   <div class="form-css">
-
+  <h2>Please fill out the form below for a lightning-fast response.</h2>
   <Label for="name">Your Name</Label>
   <input type="text" name="name" placeholder="John Doe" required /><br />
 <hr>
@@ -16,7 +15,21 @@
   <textarea name="message" placeholder="When is the next GameDev live stream???" required></textarea><br />
 <hr>
   <button type="submit">Send</button>
-</div>
-<a href="thankyou.ejs"></a>
 </form>
+
+<hr>
+<h2>Submitted Messages</h2>
+<% if (messages.length > 0) { %>
+  <ul>
+    <% messages.forEach(msg => { %>
+      <li>
+        <strong><%= msg.name %></strong> (<%= msg.email %>) said:<br>
+        <em><%= msg.message %></em>
+      </li>
+    <% }) %>
+  </ul>
+<% } else { %>
+  <p>No messages yet.</p>
+<% } %>
+</div>
 <%- include('../partials/footer') %>

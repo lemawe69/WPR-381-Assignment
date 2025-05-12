@@ -1,9 +1,20 @@
 <%- include('../partials/header') %>
+<h2>All Events</h2>
 <section class="UpcomingEvents">
-    <h2>Upcoming Events</h2>
-    <p>Check out what's happening soon!</p>
-    // Member 4 make dinamic!
+ <div class="card-container">
+    <% events.forEach(event => { %>
+      <a href="/event/<%= event.id %>" class="event-card" style="background-image: url('/images/<%= event.image %>');" data-date="<%= event.date %>">
+        <div class="event-overlay">
+          <h3><%= event.title %></h3>
+          <p><%= event.date %> - <%= event.location %></p>
+          <p class="event-description"><%= event.description %></p>
+          <div class="countdown"></div>
+        </div>
+      </a>
+    <% }) %>
+</div>
 </section>
+<script src="/js/countdown.js"></script>
 <%- include('../partials/footer') %>
    
 
