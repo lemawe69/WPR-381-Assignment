@@ -1,9 +1,22 @@
 <%- include('../partials/header') %>
-<h1>Contact Us</h1>
+<img src="/WPR381 P-AM No. 9/public/images/GameDev-ContactUs2.jpg" alt="Contact us image">
+<br>
+<p>Please fill out the form below so we can get back to you at the speed of light</p>
+<hr>
 <form method="POST" action="/contact">
-  <input type="text" name="name" placeholder="Your Name" required /><br />
-  <input type="email" name="email" placeholder="Your Email" required /><br />
-  <textarea name="message" placeholder="Your Message" required></textarea><br />
+  <div class="form-css">
+
+  <Label for="name">Your Name</Label>
+  <input type="text" name="name" placeholder="John Doe" required /><br />
+<hr>
+  <Label for="email">Your Email</Label>
+  <input type="email" name="email" placeholder="youremail@gmail.com" required /><br />
+<hr>
+  <Label for="message">Your Message</Label>
+  <textarea name="message" placeholder="When is the next GameDev live stream???" required></textarea><br />
+<hr>
   <button type="submit">Send</button>
+</div>
+<a href="thankyou.ejs"></a>
 </form>
 <%- include('../partials/footer') %>
