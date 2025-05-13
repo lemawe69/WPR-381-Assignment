@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+
 </head>
 <body>
-
+  <audio id="menuSound" src="/sounds/fantasy-game-sword-cut-sound-effect-2-7000-sfx-on-my-patreon-339823 (1).mp3" preload="auto"></audio>
+  <audio id="CmenuSound" src="/sounds/draw-sword1-44724.mp3" preload="auto"></audio>
   <nav id = "nav">
   <!-- Menu icon -->
   <span class="menu-icon" onclick="openNav()">☰ Menu</span>
 
+
   <!-- Side menu -->
   <div id="Sidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-    <a href="/events">Events</a>
+    <a href="/"><span>🎮 Home</span></a>
+    <a href="/events"><span>⚔️ Events</span></a>
+    <a href="/about"><span>🧠 About</span></a>
+    <a href="/contact"><span>📧 Contact</span></a>
   </div>
 </nav>
+
+
 <script>
   function openNav() {
     document.getElementById("Sidenav").style.width = "15%";
     document.querySelector(".menu-icon").style.display = "none";
+    document.getElementById("CmenuSound").play();
   }
   
 function closeNav() {
@@ -31,7 +37,8 @@ function closeNav() {
   const menuIcon = document.querySelector(".menu-icon");
   menuIcon.style.display = "flex";
   menuIcon.style.width = "6%";
+  document.getElementById("menuSound").play();
 }
 </script>
-
+<script src="/js/sound.js"></script>
 

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', Arial, sans-serif;
-  background-color: #121212; /* Dark mode background */
+  background-color: #121212; 
   color: white;
 }
 
@@ -106,12 +106,13 @@ a.home-button:hover {
   margin-right:30px;
   padding: 10px;
   font-size: 1.5vw;
-  background-color: #1e1e1e; 
+  background-color: rgba(0, 0, 0, 0.5); 
   color: white;
   border: 1px solid white;
   cursor: pointer;
   margin-bottom: 20px;
   width: 6%;
+  z-index: 1000;
 }
 
 .menu-icon:hover {
@@ -129,27 +130,20 @@ iframe {
   height: 100vh;
   border: none;
 }
-
-/* .banner {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-} */
-
 /* Event Cards */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 10px;
+  margin-bottom: 8px;
 }
 
 .event-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: fit-content;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -159,10 +153,12 @@ iframe {
   overflow: hidden;
   transition: transform 0.3s;
   border: 2px solid white;
+  
 }
 
 .event-card:hover {
   transform: scale(1.03);
+ 
 }
 
 .event-overlay {
@@ -170,13 +166,15 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   text-align: center;
   padding: 15px;
 }
-
+.event-overlay:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .event-description {
   display: none;
   font-size: 0.9em;
@@ -185,6 +183,24 @@ iframe {
 
 .event-card:hover .event-description {
   display: block;
+  
+}
+
+.event-detail-spacer {
+  padding-bottom: 100px;
+}
+
+
+.event-back-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.event-back-link a {
+  color: white;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  padding: 10px;
 }
 
 .countdown {
@@ -206,8 +222,7 @@ iframe {
 }
 
 .content {
-  width: 60%;
-  margin: 1% auto 20px 9%;
+  margin: 1% auto 20px 1%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -218,7 +233,7 @@ iframe {
   position: relative;
   text-align: center;
   overflow: hidden;
-  width: 85%;
+  width: 94%;
   font-size: 1vw;
 }
 
@@ -227,6 +242,35 @@ iframe {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 12px;
+}
+.team-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 4rem;
+  justify-content: center;
+  max-width: 60%;
+}
+
+
+.team-card {
+  padding: 5px; 
+  border: none;
+  overflow: hidden;
+}
+
+.team-img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body{
+  margin: 0;
+  border: solid white 1px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 
@@ -249,3 +293,4 @@ footer {
   overflow: hidden;             
   white-space: nowrap; 
 }
+

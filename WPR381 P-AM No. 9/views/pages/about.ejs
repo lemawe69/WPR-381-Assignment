@@ -1,3 +1,36 @@
 <%- include('../partials/header') %>
-h1>About Us</h1>
+<center>
+<div>
+  <div>
+    <h1>About Us</h1>
+    <p>
+      We are a passionate group of gamers building an inclusive and fun community.
+    </p>
+  </div>
+
+  <% if (teamMembers && teamMembers.length > 0) { %>
+    <div class="team-grid">
+      <% teamMembers.forEach(function(member) { %>
+        <div class="team-card card">
+          <img
+            src="/images/<%= member.image %>"
+            class="team-img"
+            alt="<%= member.name %>"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-semibold"><%= member.name %></h5>
+            <p class="card-text text-muted">
+              <strong>Role:</strong> <%= member.role %><br />
+              <strong>Specialty Games:</strong> <%= member.specialtyGames.join(', ') %><br />
+              <%= member.bio %>
+            </p>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  <% } else { %>
+    <p>No team members available at the moment.</p>
+  <% } %>
+</div>
+</center>
 <%- include('../partials/footer') %>

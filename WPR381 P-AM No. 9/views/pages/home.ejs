@@ -3,7 +3,7 @@
   
 <!-- <img src="/images/GameDev-Banner.png" alt="GameDev Banner" class="banner"> -->
 
-<section class="content" style="background-image: url('/images/GameDev-Join.jpg');">
+<section class="content" style="background-image: url('images/Pixel_Art_Bannar_1_6ea024d4a2_ab9355db06.jpg');">
   <div class="content-overlay">
     <h1>LEVEL UP YOUR GAME</h1>
     <p>Join 50,000+ players in tournaments, guilds, and live streams all around the world.</p>
@@ -20,20 +20,19 @@
     <% upcomingEvents.forEach(event => { %>
       <a href="/event/<%= event.id %>" class="event-card" style="background-image: url('/images/<%= event.image %>');" data-date="<%= event.date %>">
         <div class="event-overlay">
-          <h3><%= event.title %></h3>
-          <!-- <p><%= event.date %> --> <%= event.location %></p>
+          <h2><%= event.title %></h2>
+          <p><%= new Date(event.date).toDateString() %> - <%= event.location %></p>
           <p class="event-description"><%= event.description %></p>
           <div class="countdown"></div>
         </div>
       </a>
     <% }) %>
   </div>
+  
   <div class="button-container">
     <a href="/events" class="home_more">View All Events</a>
 </div>
 </section>
-<hr>
-
 <!-- <section class="home-css">
 <h1>
 <b><u>Want to know more about us?</u></b>

@@ -1,20 +1,39 @@
 <%- include('../partials/header') %>
-<h2>All Events</h2>
+
+<h2 class="mb-4" style="text-align: center;">Upcoming Gaming Events</h2>
+
 <section class="UpcomingEvents">
- <div class="card-container">
-    <% events.forEach(event => { %>
-      <a href="/event/<%= event.id %>" class="event-card" style="background-image: url('/images/<%= event.image %>');" data-date="<%= event.date %>">
-        <div class="event-overlay">
-          <h3><%= event.title %></h3>
-          <p><%= event.date %> - <%= event.location %></p>
-          <p class="event-description"><%= event.description %></p>
-          <div class="countdown"></div>
-        </div>
-      </a>
-    <% }) %>
-</div>
+  <% if (gamingEvents && gamingEvents.length > 0) { %>
+    <div class="card-container">
+      <% gamingEvents.forEach(function(event) { 
+          const eventDate = new Date(event.date); 
+          const today = new Date(); 
+          const isUpcoming = eventDate > today; 
+      %>
+        <a href="/event/<%= event.id %>" class="event-card" style="background-image: url('/images/<%= event.image %>');" data-date="<%= event.date %>">
+          <div class="event-overlay">
+            <h3><%= event.title %></h3>
+            <p><strong>Date:</strong> <%= eventDate.toDateString() %></p>
+            <p><strong>Location:</strong> <%= event.location %></p>
+            <p><strong>Game:</strong> <%= event.game %></p>
+            
+            <% if (isUpcoming && event.registrationOpen) { %>
+              <span class="text-success">Registration Open</span>
+            <% } else { %>
+              <span class="text-danger">Registration Closed</span>
+            <% } %>
+            
+            <div class="countdown"></div>
+          </div>
+        </a>
+      <% }) %>
+    </div>
+  <% } else { %>
+    <div class="alert alert-info text-center" role="alert">
+      No upcoming events available at the moment.
+    </div>
+  <% } %>
 </section>
+
 <script src="/js/countdown.js"></script>
 <%- include('../partials/footer') %>
-   
-

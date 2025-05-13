@@ -1,13 +1,37 @@
 <%- include('../partials/header') %>
 
-<div class="event-detail">
-  <h2><%= event.title %></h2>
-  <img src="/images/<%= event.image %>" alt="<%= event.title %>" style="width:100%;">
-  <p><strong>Date:</strong> <%= event.date %></p>
-  <p><strong>Location:</strong> <%= event.location %></p>
-  <p><%= event.description %></p>
+<div class="event-detail-spacer">
+  <div class="event-detail" style="max-width: 800px; margin: 40px auto; padding: 20px; border: 1px solid white; border-radius: 12px; background-color: rgba(0, 0, 0, 0.7); color: white;">
+    <h2 style="text-align: center;"><%= event.title %></h2>
+
+    <img src="/images/<%= event.image %>" alt="<%= event.title %>" style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
+    <center>
+      <% const eventDate = new Date(event.date);
+      const today = new Date(); 
+      const isUpcoming = eventDate > today; %>
+
+      <p><strong>Date:</strong> <%= eventDate.toDateString() %> - <%= eventDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true }) %></p>
+      <p><strong>Location:</strong> <%= event.location %></p>
+      <p><strong>Game:</strong> <%= event.game %></p>
+      <p><strong>Genre:</strong> <%= event.genre %></p>
+
+      <% if (isUpcoming && event.registrationOpen) { %>
+         <span class="text-success"><strong>Registration: </strong>Open</span>
+      <% } else { %>
+         <span class="text-danger"><strong>Registration: </strong> Closed</span>
+      <% } %>
+      <p><br><strong>Description:<br></strong><br><%=event.description %></p>
+      <br>
+    </center>
+
+
+    <div class="countdown" data-date="<%= event.date %>" style="margin-top: 20px; font-weight: bold;"></div>
+  </div>
+
+  <div class="event-back-link">
+    <a href="/events">Back to Events</a>
+  </div>
 </div>
 
-<a href="/events">Back</a>
-
+<script src="js/countdown.js"></script>
 <%- include('../partials/footer') %>
