@@ -24,6 +24,13 @@ const teamMembers = [
     specialtyGames: ["Valorant", "League of Legends"],
   },
 
-  
+  {
+    id: "578062",
+    name: "Branddon Alfonso Lemmer",
+    role: "Team Lead, Frontend Developer and Documentation Manager",
+    bio: "Long-time community leader and passionate about games.",
+    image: "WPR381 P-AM No. 9/public/images/Brandon_Alfonso lemmer.jpg",
+    specialtyGames: ["Last of us", "League of Legends"],
+  },
 ];
 module.exports = {teamMembers} 
