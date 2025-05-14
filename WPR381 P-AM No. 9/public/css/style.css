@@ -284,7 +284,7 @@ iframe {
 
 
 body.thank-you-page {
-  background: url('/images/6220788_1432672_ko-dll_would-you-live-in-a-place-such-as-this-one.1791efa168f49e5dfe14c9f5b588e634.webp') no-repeat center center fixed;
+  background: url('/images/Thankyou_background.webp') no-repeat center center fixed;
   background-size: cover;
 }
 #container {
@@ -294,7 +294,7 @@ body.thank-you-page {
   color: white;
 }
  body.Event-page{
-  background: url('/images/20250514_1002_Pixel Adventure Quest_simple_compose_01jv6wzpaxf18sja90sry6cg6c.png') no-repeat center center fixed;
+  background: url('/images/Event_Page_Background.png') no-repeat center center fixed;
   background-size: cover;
  }
  .mb-4{
@@ -307,11 +307,11 @@ body.thank-you-page {
   margin: 10px auto;
  }
  body.About-Page {
-  background: url('/images/assets_task_01jrg4dr0ge1xsq3wj9qh1qd57_img_1.webp') no-repeat center center fixed;
+  background: url('/images/About_PageBacground.webp') no-repeat center center fixed;
   background-size: cover;
 }
  body.ContactPage {
-  background: url('/images/20250514_1030_Fantasy Village Sunset_simple_compose_01jv6yk986e1hagpt2v7pxj6xr.png') no-repeat center center fixed;
+  background: url('/images/Contact_pageBackground.png') no-repeat center center fixed;
   background-size: cover;
 }
 /* Footer */
