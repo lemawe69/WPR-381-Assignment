@@ -19,7 +19,7 @@ Node.js, Express, Git, GitHub, Nodemon, Css, EJS and bootstrap.
 4. Use `npm run dev` to start the development server 
 5. Open your web browser and navigate to `http://localhost:3000/` to view the pages.
 
-![Instalation instructions](images/Instalation_instructions.png)
+![Installation instructions](public/images/Instalation_instructions.png)
 
 
 # Team roles
