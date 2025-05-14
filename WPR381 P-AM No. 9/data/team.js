@@ -16,6 +16,14 @@ const teamMembers = [
     specialtyGames: ["Last of us", "League of Legends"],
   },
   {
+    id: "578109",
+    name: "Otsile Sebola",
+    role: "Data Manager and Frontend Developer",
+    bio: "Community leader, passionate about Valorant and Call of Duty.",
+    image: "headshot.jpeg",
+    specialtyGames: ["Valorant", "Call of Duty"],
+  },
+  {
     id: "Mod_fps_pro",
     name: "Ryan",
     role: "Moderator",
@@ -30,6 +38,14 @@ const teamMembers = [
     bio: "Long-time community leader, passionate about Valorant and League of Legends.",
     image: "headshot.jpeg",
     specialtyGames: ["Valorant", "League of Legends"],
+  },
+  {
+    id: "578109",
+    name: "Otsile Sebola",
+    role: "Data Manager and Frontend Developer",
+    bio: "Community leader, passionate about Valorant and Call of Duty.",
+    image: "headshot.jpeg",
+    specialtyGames: ["Valorant", "Call of Duty"],
   },
 
  
