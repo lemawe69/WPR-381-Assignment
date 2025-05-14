@@ -14,7 +14,6 @@ router.get('/', (req, res) => {
   res.render('pages/home', { upcomingEvents });
 });
 
-
 router.get('/about', (req, res) => {
     res.render('pages/about', { teamMembers })
 });
@@ -29,6 +28,7 @@ router.get("/event/:id", (req, res)=>{
     }
     res.render('pages/eventDetail', { event });
 })
+
 router.get('/contact', (req, res) => {
     res.render('pages/contact', {messages});
 });

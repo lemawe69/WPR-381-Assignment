@@ -29,7 +29,9 @@
   function openNav() {
     document.getElementById("Sidenav").style.width = "15%";
     document.querySelector(".menu-icon").style.display = "none";
-    document.getElementById("CmenuSound").play();
+    const openSound = document.getElementById("CmenuSound");
+    openSound.volume = 0.1; 
+    openSound.play();
   }
   
 function closeNav() {
@@ -37,7 +39,9 @@ function closeNav() {
   const menuIcon = document.querySelector(".menu-icon");
   menuIcon.style.display = "flex";
   menuIcon.style.width = "6%";
-  document.getElementById("menuSound").play();
+  const closeSound = document.getElementById("menuSound");
+  closeSound.volume = 0.2; 
+  closeSound.play();
 }
 </script>
 <script src="/js/sound.js"></script>

@@ -1,10 +1,11 @@
 <%- include('../partials/header') %>
-    <center>
-        <div id = "container">
-            <h2>Thank you<% if (name) { %>, <span style="color: cyan;"><%= name %></span><% } %>!</h2>
-            <p>Your message has been received. We'll get back to you soon.</p>
-            <a href="/" class="thankyou_home-button ">Back to Home</a>
-        </div>
-    </center>
-
+<body class="thank-you-page">
+  <center>
+    <div id="container">
+      <h2>Thank you<% if (name) { %>, <span style="color: cyan;"><%= name %></span><% } %>!</h2>
+      <p>Your message has been received. We'll get back to you soon.</p>
+      <a href="/" class="thankyou_home-button">Back to Home</a>
+    </div>
+  </center>
+</body>
 <%- include('../partials/footer') %>

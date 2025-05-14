@@ -158,7 +158,6 @@ iframe {
 
 .event-card:hover {
   transform: scale(1.03);
- 
 }
 
 .event-overlay {
@@ -183,7 +182,6 @@ iframe {
 
 .event-card:hover .event-description {
   display: block;
-  
 }
 
 .event-detail-spacer {
@@ -214,11 +212,11 @@ iframe {
 }
 
 .button-container {
-    text-align: right;
+  text-align: right;
+  margin: -3% auto 15px ;
 }
 .home_more {
-    margin-right: 10px;
-    
+  margin-right: 10px;  
 }
 
 .content {
@@ -243,38 +241,79 @@ iframe {
   padding: 20px;
   border-radius: 12px;
 }
+
+
+
+
+
+
+
 .team-grid {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 4rem;
+  gap: 2rem;
   justify-content: center;
-  max-width: 60%;
+  max-width: 70%;
+  padding-bottom: 100px;
 }
 
 
 .team-card {
-  padding: 5px; 
   border: none;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
 }
 
 .team-img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 250px;
+  object-fit: contain;
 }
 .card-body{
   margin: 0;
-  border: solid white 1px;
+  
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 
 
-
+body.thank-you-page {
+  background: url('/images/6220788_1432672_ko-dll_would-you-live-in-a-place-such-as-this-one.1791efa168f49e5dfe14c9f5b588e634.webp') no-repeat center center fixed;
+  background-size: cover;
+}
+#container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+}
+ body.Event-page{
+  background: url('/images/20250514_1002_Pixel Adventure Quest_simple_compose_01jv6wzpaxf18sja90sry6cg6c.png') no-repeat center center fixed;
+  background-size: cover;
+ }
+ .mb-4{
+  font-size: 2vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  width: fit-content;
+  margin: 10px auto;
+ }
+ body.About-Page {
+  background: url('/images/assets_task_01jrg4dr0ge1xsq3wj9qh1qd57_img_1.webp') no-repeat center center fixed;
+  background-size: cover;
+}
+ body.ContactPage {
+  background: url('/images/20250514_1030_Fantasy Village Sunset_simple_compose_01jv6yk986e1hagpt2v7pxj6xr.png') no-repeat center center fixed;
+  background-size: cover;
+}
 /* Footer */
 footer {
   position: fixed;

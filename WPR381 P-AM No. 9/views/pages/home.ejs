@@ -14,8 +14,12 @@
 
 <section>
   <center>
-    <h1>View Tournaments</h1>
+    <h1>Upcomming Tournaments</h1>
   </center>
+  <div class="button-container">
+    <a href="/events" class="home_more">View All Events</a>
+  </div>
+
   <div class="card-container">
     <% upcomingEvents.forEach(event => { %>
       <a href="/event/<%= event.id %>" class="event-card" style="background-image: url('/images/<%= event.image %>');" data-date="<%= event.date %>">
@@ -29,9 +33,7 @@
     <% }) %>
   </div>
   
-  <div class="button-container">
-    <a href="/events" class="home_more">View All Events</a>
-</div>
+
 </section>
 <!-- <section class="home-css">
 <h1>

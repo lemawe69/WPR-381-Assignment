@@ -1,11 +1,11 @@
 const teamMembers = [
   {
-    id: "admin_James",
-    name: "James",
-    role: "Administrator",
-    bio: "Long-time community leader, passionate about Valorant and League of Legends.",
-    image: "headshot.jpeg",
-    specialtyGames: ["Valorant", "League of Legends"],
+    id: "578081",
+    name: "Jan-Paul Seaman",
+    role: "Backend & Frontend Developer",
+    bio: "A dedicated backend developer with strong frontend support skills, passionate about building interactive, game-inspired web applications with dynamic data and responsive design.",
+    image: "headshot578081.png",
+    specialtyGames: ["Monster Hunter", "CS2"],
   },
   {
     id: "Mod_fps_pro",
@@ -23,15 +23,7 @@ const teamMembers = [
     image: "headshot.jpeg",
     specialtyGames: ["Valorant", "League of Legends"],
   },
-  {
-    id: "Mod_fps_pro",
-    name: "Ryan",
-    role: "Moderator",
-    bio: "Ex-professional FPS player, now helping to keep the community safe and fun.",
-    image: "headshot.jpeg",
-    specialtyGames: ["Valorant", "CS:GO", "Call of Duty"],
-  },
-  
+
   
 ];
 module.exports = {teamMembers} 

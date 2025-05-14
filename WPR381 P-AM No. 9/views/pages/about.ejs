@@ -1,6 +1,9 @@
 <%- include('../partials/header') %>
+<body class = "About-Page">
+  
+
 <center>
-<div>
+<div id = "About-Page-Container">
   <div>
     <h1>About Us</h1>
     <p>
@@ -11,17 +14,18 @@
   <% if (teamMembers && teamMembers.length > 0) { %>
     <div class="team-grid">
       <% teamMembers.forEach(function(member) { %>
-        <div class="team-card card">
+        <div class="team-card">
           <img
             src="/images/<%= member.image %>"
             class="team-img"
             alt="<%= member.name %>"
           />
           <div class="card-body">
-            <h5 class="card-title fw-semibold"><%= member.name %></h5>
-            <p class="card-text text-muted">
+            <h5 class="card-title"><%= member.name %></h5>
+            <p class="card-text">
               <strong>Role:</strong> <%= member.role %><br />
               <strong>Specialty Games:</strong> <%= member.specialtyGames.join(', ') %><br />
+              <br>
               <%= member.bio %>
             </p>
           </div>
@@ -33,4 +37,5 @@
   <% } %>
 </div>
 </center>
+</body>
 <%- include('../partials/footer') %>
