@@ -17,3 +17,6 @@ Node.js, Express, Git, GitHub, Nodemon, Css, EJS and bootstrap.
 Brandon Alfonso Lemmer (578062) - Team Lead, Frontend Developer and Documentation Manager.
 Jan-Paul Seaman (578081) - Backend Developer, Frontend Developer.
 Otsile Sebola (578109) - Data Manager, Frontend Developer.
+
+# Link to github Repo
+https://github.com/lemawe69/WPR-381-Assignment
