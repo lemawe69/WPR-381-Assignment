@@ -39,14 +39,7 @@ const teamMembers = [
     image: "headshot.jpeg",
     specialtyGames: ["Valorant", "League of Legends"],
   },
-  {
-    id: "578109",
-    name: "Otsile Sebola",
-    role: "Data Manager and Frontend Developer",
-    bio: "Community leader, passionate about Valorant and Call of Duty.",
-    image: "headshot.jpeg",
-    specialtyGames: ["Valorant", "Call of Duty"],
-  },
+  
 
  
 ];
